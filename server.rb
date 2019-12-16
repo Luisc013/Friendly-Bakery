@@ -17,6 +17,6 @@ get '/cookies' do
   erb :cookies
 end
 
-get '/cupcakess' do
+get '/cupcakes' do
   erb :cupcakes
 end
