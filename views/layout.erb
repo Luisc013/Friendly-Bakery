@@ -3,35 +3,37 @@
 <html>
 <head>
     <title>Gâteau Sacré</title>
-    <link href="./main.css" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet"/>
     <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_552937.png">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="Homepage-container">
-    <nav id="Homepage-container--Nav">
+  <div class="Homepage-Container">
+    <nav id="Homepage--Nav">
       <div class="Nav-Menu-Header">
-        <p>Gâteau Sacré</p>
+        <h1>Gâteau Sacré</h1>
       </div>
       <div class="Nav-Menu--Search">
-        <img src="Nav-Menu-Logo.png" alt="" class="Nav-Menu--logos">
-        <img src="white-search-icon.jpg" alt="" class="Nav-Menu--logos">
+        <img src="/images/Nav-Menu-Logo.png" class="Nav-Menu--logos">
+        <img src="/images/white-search-icon.jpg" class="Nav-Menu--logos">
       </div>
       <div class="Nav-Menu--Links">
-        <a href="/">Home</a>
-        <a href="/info">About Us</a>
-        <a href="/cakes">Shop Cakes</a>
-        <a href="/cookies">Shop Cookies</a>
-        <a href="/cupcakes">Shop Cupcakes</a>
+        <ul>
+          <li><a href="/">Home</a><l/i>
+          <li><a href="/info">About Us</a></li>
+          <li><a href="/cakes">Shop Cakes</a></li>
+          <li><a href="/cookies">Shop Cookies</a></li>
+          <li><a href="/cupcakes">Shop Cupcakes</a></li>
+        </ul>
       </div>
       <div class="Nav-Menu--Cart">
-        <img src="cart-icon.jpg" alt="" class="Nav-Menu--logos">
+        <img src="/images/cart-icon.jpg" class="Nav-Menu--logos">
       </div>
     </nav>
+    <div class="Page-Contents">
+      <%= yield %>
+    </div>
   </div>
-<div class="Page-Contents">
-  <%= yield %>
-</div>
   <script src="main.js" charset="utf-8"></script>
 </body>
 </html>

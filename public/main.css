@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.Homepage-Container {
+  display: grid;
+  grid-template-rows: 10% 10% 80%;
+  grid-template-columns: 20% 80% 20%;
+  margin: 0;
+  grid-template-areas:
+  ". header ."
+  "search links cart"
+  "relevance relevance relevance";
+}
+
+
+.Nav-Menu-Header {
+  grid-area: header;
+}
+
+.Nav-Menu-Header h1 {
+  font-family: 'Satisfy', cursive;
+  margin: 0;
+}
+
+.Nav-Menu--Search {
+  grid-area: search;
+}
+
+.Nav-Menu--Links {
+  grid-area: links;
+}
+
+.Nav-Menu--Links ul li a {
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-decoration: none;
+}
+
+.Nav-Menu--Cart {
+  grid-area: cart;
+}
+
+.Nav-Menu--logos {
+  width: 36px;
+  height: 32px;
+}
+
+.Page-Contents {
+  grid-area: relevance;
+}
