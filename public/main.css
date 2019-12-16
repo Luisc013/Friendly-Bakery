@@ -1,15 +1,18 @@
 body {
 margin: 0;
-height: auto;
-width: 99vw;
+height: 100vh;
+width: 100vw;
+background-color: #c4c4c4;
+overflow-x: hidden;
 }
 
 #homepage--nav {
+  height: 20vh;
   display: grid;
   grid-template-rows: 60% 40%;
-  grid-template-columns: 28% 52% 20%;
+  grid-template-columns: 20% 60% 20%;
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 13px;
   grid-template-areas:
   "header header header"
   "search links cart"
@@ -17,7 +20,7 @@ width: 99vw;
 
 .nav-menu-header {
   grid-area: header;
-  padding-top: 25px;
+  padding-top: 2%;
 }
 
 .nav-menu-header h1 {
@@ -45,7 +48,7 @@ width: 99vw;
   float: left;
   list-style-type: none;
   text-decoration: none;
-  letter-spacing: .2em;
+  letter-spacing: .3em;
   padding: 15px 10px;
   font-weight: bold;
 }
@@ -54,11 +57,11 @@ width: 99vw;
   text-decoration: none;
   font-family: 'Satisfy', cursive;
   font-size: 1.2em;
-  color: #3e789e
+  color: #162d3c
 }
 
 #nav-menu--list li a:hover {
-  color: #ffc107;
+  color: #e7c04b;
   cursor: pointer;
 }
 
@@ -69,7 +72,7 @@ width: 99vw;
 
 .nav-menu--logos1 {
   width: auto;
-  height: 40px;
+  height: 30px;
   padding-left: 40px;
   margin-top: 10px;
   margin-bottom: 2px;
@@ -81,7 +84,7 @@ width: 99vw;
 
 .nav-menu--logos2 {
   width: auto;
-  height: 40px;
+  height: 30px;
   float: right;
   padding-right: 50px;
   margin-top: 10px;
@@ -90,4 +93,25 @@ width: 99vw;
 
 .nav-menu--logos2:hover {
   cursor: pointer;
+}
+
+.homepage-container--art {
+  width: 100vw;
+  margin: 0
+}
+
+.homepage-container--art img{
+  width: 100%;
+}
+
+#about-container {
+  text-align: center;
+  padding: 0 10% 0 10%;
+  margin-top: 5%;
+  font-family: sans-serif;
+}
+
+#about-container h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
 }
