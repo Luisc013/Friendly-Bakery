@@ -8,32 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="Homepage-Container">
-    <nav id="Homepage--Nav">
-      <div class="Nav-Menu-Header">
+  <div class="homepage-container">
+    <div id="homepage--nav">
+      <div class="nav-menu-header">
         <h1>Gâteau Sacré</h1>
       </div>
-      <div class="Nav-Menu--Search">
-        <img src="/images/Nav-Menu-Logo.png" class="Nav-Menu--logos">
-        <img src="/images/white-search-icon.jpg" class="Nav-Menu--logos">
+      <div class="nav-menu--search">
+        <img src="/images/Nav-Menu-Logo.png" class="nav-menu--logos1">
+        <img src="/images/white-search-icon.jpg" class="nav-menu--logos1">
       </div>
-      <div class="Nav-Menu--Links">
-        <ul>
-          <li><a href="/">Home</a><l/i>
+      <div class="nav-menu--links" orientation="horizontal" >
+        <ul id="nav-menu--list">
+          <li><a href="/">Home</a></li>
           <li><a href="/info">About Us</a></li>
           <li><a href="/cakes">Shop Cakes</a></li>
           <li><a href="/cookies">Shop Cookies</a></li>
           <li><a href="/cupcakes">Shop Cupcakes</a></li>
         </ul>
       </div>
-      <div class="Nav-Menu--Cart">
-        <img src="/images/cart-icon.jpg" class="Nav-Menu--logos">
+      <div class="nav-menu--cart">
+        <img src="https://static.thenounproject.com/png/16757-200.png" class="nav-menu--logos2">
       </div>
-    </nav>
-    <div class="Page-Contents">
-      <%= yield %>
     </div>
   </div>
+    <div class="page-contents">
+      <%= yield %>
+    </div>
   <script src="main.js" charset="utf-8"></script>
 </body>
 </html>
