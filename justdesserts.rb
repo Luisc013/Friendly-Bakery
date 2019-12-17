@@ -21,7 +21,7 @@ class Cake < Dessert
       def initialize(name, image)
         super(name, image)
         @type = "Cake"
-        @cost = 79.99
+        @cost = 59.99
     end
 end
 
@@ -30,7 +30,7 @@ class Muffin < Dessert
       def initialize(name, image)
         super(name, image)
         @type = "Cupcakes"
-        @cost = 46.99
+        @cost = 41.99
   end
 end
 

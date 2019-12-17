@@ -1,10 +1,10 @@
     <div class="dessert-grid">
-      <h2>Cookie Menu</h2>
+      <h2><u>Cookie Menu</u></h2>
       <% @@cookies.each do |cookie| %>
       <br>
       <img class="dessert-img" src="<%= cookie.image %>"/>
       <h3 class="dessert-name"><%= cookie.name %></h3>
-      <p class="dessert-price">Servings Dozen Pack</p>
+      <p class="dessert-price">Servings: Dozen Pack</p>
       <p class="dessert-price">$<%= cookie.cost %></p>
       <button class="button button--shadow" type="button" name="button">Add to cart</button>
     </div>

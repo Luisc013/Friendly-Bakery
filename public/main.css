@@ -28,8 +28,8 @@ background-color: #f2eaa8
 }
 
 #homepage--nav {
-  height: 20vh;
   display: grid;
+  height: 20vh;
   grid-template-rows: 60% 40%;
   grid-template-columns: 20% 60% 20%;
   margin: 0;
@@ -63,6 +63,13 @@ background-color: #f2eaa8
 #nav-menu--list {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #nav-menu--list li {
@@ -83,7 +90,7 @@ background-color: #f2eaa8
 }
 
 #nav-menu--list li a:hover {
-  text-shadow: 2px 2px 8px #ffc107;
+  text-shadow: 6px 6px 14px #ac31e8;
   cursor: pointer;
 }
 

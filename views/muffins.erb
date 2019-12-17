@@ -1,9 +1,10 @@
     <div class="dessert-grid">
-      <h2>Muffins Menu</h2>
+      <h2> <u>Muffins Menu</u></h2>
       <% @@muffins.each do |muffin| %>
       <br>
       <img class="dessert-img" src="<%= muffin.image %>"/>
       <h3 class="dessert-name"><%= muffin.name %></h3>
+      <p class="dessert-price">Servings: Dozen Pack</p>
       <p class="dessert-price">$<%= muffin.cost %></p>
       <button class="button button--shadow" type="button" name="button">Add to cart</button>
     </div>
