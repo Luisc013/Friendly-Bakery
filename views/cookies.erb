@@ -1,0 +1,8 @@
+<h2>Cookie Menu</h2>
+    <div class="dessert-grid">
+      <% @@cookies.each do |cookie| %>
+      <img class="dessert-img" src="<%= cookie.image %>"/>
+      <h3 class="dessert-name"><%= cookie.name %></h3>
+      <p class="dessert-price">$<%= cookie.cost %></p>
+    </div>
+ <% end %>
