@@ -12,19 +12,34 @@ get '/' do
 end
 
 get '/cakes' do
-  # req = HTTParty.get('https://api.spoonacular.com/recipes/search?query=cake&number=3&apiKey=889d85cffdfd45c58e3d6762bb4b446d')
-  # data = JSON.parse(req.body)
+  req = HTTParty.get(@@url,{query: {
+    query: "cake",
+    number: 3,
+    apiKey: ENV["RECIPE_KEY"]
+  }
+    })
+  data = JSON.parse(req.body)
   erb :cakes
 end
 
 get '/cookies' do
-  # req = HTTParty.get('https://api.spoonacular.com/recipes/search?query=cookie&number=3&apiKey=889d85cffdfd45c58e3d6762bb4b446d')
-  # data = JSON.parse(req.body)
+  req = HTTParty.get(@@url,{query: {
+    query: "cookies",
+    number: 3,
+    apiKey: ENV["RECIPE_KEY"]
+  }
+    })
+      data = JSON.parse(req.body)
   erb :cookies
 end
 
 get '/muffins' do
-  # req = HTTParty.get('https://api.spoonacular.com/recipes/search?query=muffin&number=3&apiKey=889d85cffdfd45c58e3d6762bb4b446d')
-  # data = JSON.parse(req.body)
+  req = HTTParty.get(@@url,{query: {
+    query: "muffins",
+    number: 3,
+    apiKey: ENV["RECIPE_KEY"]
+  }
+    })
+      data = JSON.parse(req.body)
   erb :muffins
 end

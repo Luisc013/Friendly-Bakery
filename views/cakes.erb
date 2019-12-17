@@ -1,8 +1,12 @@
-<h2>Cake Menu</h2>
     <div class="dessert-grid">
+      <h2>Cake Menu</h2>
       <% @@cakes.each do |cake| %>
+      <br>
       <img class="dessert-img" src="<%= cake.image %>"/>
       <h3 class="dessert-name"><%= cake.name %></h3>
       <p class="dessert-price">$<%= cake.cost %></p>
+      <button class="button button--shadow" type="button" name="button">Add to cart</button>
     </div>
+    <br>
  <% end %>
+ <br>
