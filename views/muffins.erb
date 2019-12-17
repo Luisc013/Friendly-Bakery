@@ -1,0 +1,8 @@
+<h2>Cupcake Menu</h2>
+    <div class="dessert-grid">
+      <% @@muffins.each do |muffin| %>
+      <img class="dessert-img" src="<%= muffin.image %>"/>
+      <h3 class="dessert-name"><%= muffin.name %></h3>
+      <p class="dessert-price">$<%= muffin.cost %></p>
+    </div>
+ <% end %>

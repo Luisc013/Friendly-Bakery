@@ -1,12 +1,8 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-  <h1>Cookie Menu</h1>
-  <%= @cookie.name %>
-  <img src="<%= @cookie.image %>" />
-  <script src="./public/main.js"></script>
-</body>
-</html>
+<h2>Cookie Menu</h2>
+    <div class="dessert-grid">
+      <% @@cookies.each do |cookie| %>
+      <img class="dessert-img" src="<%= cookie.image %>"/>
+      <h3 class="dessert-name"><%= cookie.name %></h3>
+      <p class="dessert-price">$<%= cookie.cost %></p>
+    </div>
+ <% end %>
