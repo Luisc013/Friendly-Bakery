@@ -25,7 +25,7 @@ class Cake < Dessert
     end
 end
 
-class Cupcake < Dessert
+class Muffin < Dessert
     attr_accessor :name, :type, :cost, :image
       def initialize(name, image)
         super(name, image)
@@ -44,8 +44,8 @@ gc = Cake.new("German Chocolate", "https://tatyanaseverydayfood.com/wp-content/u
 birthday = Cake.new("Birthday", "https://truffle-assets.imgix.net/671e1dd0-strawberry-dream-birthday-cake_pc.jpg")
 red_vel_c = Cake.new("Red Velvet", "https://www.modernhoney.com/wp-content/uploads/2017/12/Red-Velvet-Cake-12.jpg")
 flan = Cake.new("Flan", "https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Creamy-Caramel-Flan_exps2197_GPW2337930A12_09_2bC_RMS.jpg")
-fudge = Cupcake.new("Fudge", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUh5PPTikvR9ZAFS0TwMkIvQSR8Ezh-xuM69L3SwYtfv36_aE&s")
-red_vel_cc = Cupcake.new("Red Velvet", "https://www.berries.com/blog/wp-content/uploads/2016/01/1-martha-sprinkles.jpg")
-oc = Cupcake.new("Orange Cream", "https://www.berries.com/blog/wp-content/uploads/2016/01/14-gluten-free.jpg")
-uc = Cupcake.new("Ultimate Chocolate", "https://www.berries.com/blog/wp-content/uploads/2016/01/29-pretty-simple-sweet.jpg")
-cheesecake_cc = Cupcake.new("Cheesecake", "https://www.berries.com/blog/wp-content/uploads/2016/01/30-.jpg")
+fudge = Muffin.new("Fudge", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUh5PPTikvR9ZAFS0TwMkIvQSR8Ezh-xuM69L3SwYtfv36_aE&s")
+red_vel_cc = Muffin.new("Red Velvet", "https://www.berries.com/blog/wp-content/uploads/2016/01/1-martha-sprinkles.jpg")
+oc = Muffin.new("Orange Cream", "https://www.berries.com/blog/wp-content/uploads/2016/01/14-gluten-free.jpg")
+uc = Muffin.new("Ultimate Chocolate", "https://www.berries.com/blog/wp-content/uploads/2016/01/29-pretty-simple-sweet.jpg")
+cheesecake_cc = Muffin.new("Cheesecake", "https://www.berries.com/blog/wp-content/uploads/2016/01/30-.jpg")
