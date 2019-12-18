@@ -1,3 +1,13 @@
     <div class="dessert-grid">
-      <h2> <u>Try At Home</u></h2>
+      <h2> <u>In-Store Seasonal Specials</u></h2>
+      <% @data["results"].each do |dessert| %>
+          <br>
+              <img class="dessert-img" width="600px" src="https://spoonacular.com/recipeImages/<%= dessert["image"] %>">
+              <br>
+              <p class="dessert-price"><%= dessert["title"] %></p>
+              <p class="dessert-price">Servings: <%= dessert["servings"] %>pcs</p>
+              <p class="dessert-price">Buy in Stores</p>
+
+          <br>
+      <% end %>
     </div>
