@@ -1,4 +1,4 @@
 source 'https://rubygems.org' do
   gem "sinatra"
-  gem 'httparty', '~> 0.17.3'
+  gem 'httparty', '~> 0.21.0'
 end
